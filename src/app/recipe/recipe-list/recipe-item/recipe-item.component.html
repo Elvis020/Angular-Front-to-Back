@@ -1,11 +1,22 @@
-<a class="list-group-item clearfix" (click)="itemIsClicked()">
-
+<a
+class="list-group-item clearfix"
+[routerLink]="[index]"
+style="cursor: pointer;"
+>
   <div class="float-left">
-    <h3 class="list-group-item-heading"> {{ recipe.name}}  </h3>
-    <p class="list-group-item-text"> {{recipe.desc}} </p>
+    <h3 style="cursor: pointer;" class="list-group-item-heading">
+      {{ recipe.name }}
+    </h3>
+    <p style="cursor: pointer;" class="list-group-item-text">
+      {{ recipe.desc }}
+    </p>
   </div>
 
   <span class="float-right">
-    <img [src]="recipe.imagePath" class="img-responsive" style="max-height: 60px;">
+    <img
+      [src]="recipe.imagePath"
+      class="img-responsive"
+      style="max-height: 60px;"
+    />
   </span>
 </a>

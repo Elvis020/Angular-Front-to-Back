@@ -2,8 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <app-recipe *ngIf="CorrectLoady === 'recipe' "  ></app-recipe>
-      <app-shopping-list *ngIf="CorrectLoady !== 'recipe' "></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
